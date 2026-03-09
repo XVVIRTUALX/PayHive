@@ -57,8 +57,13 @@ nav a:hover {
     text-align: center;
 }
 
-main h2 {
-    color: #004d00; /* darker green heading */
+<main class="hero">
+    <h1>Welcome to PayHive</h1>
+    <h2>Your NZ Work & Payment Hub</h2>
+
+    <a class="btn" href="payment.html">Pay Worker</a>
+    <a class="btn" href="buy-products.html">Buy Products</a>
+</main>
 }
 
 /* -----------------------
