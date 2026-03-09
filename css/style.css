@@ -21,7 +21,7 @@ header .logo {
 }
 
 nav a {
-    color: #c0ffc0; /* green links */
+    color: #004d00; /* dark green for links */
     margin-left: 1rem;
     text-decoration: none;
     font-weight: bold;
@@ -37,7 +37,7 @@ main {
 }
 
 .hero {
-    background-color: #ffd70033; /* light gold background */
+    background-color: #c0ffc0; /* light green for hero section */
     padding: 2rem;
     border-radius: 10px;
 }
