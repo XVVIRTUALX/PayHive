@@ -5,10 +5,14 @@ body {
     color: #333;
 }
 
+.logo {
+    color: #ffd700; /* gold text for Gold Hive logo */
+    font-size: 1.8rem;
+    font-weight: bold;
+}
 header {
-    background-color: #4a4a4a; /* dark grey header */
-    color: #ffd700; /* gold text */
-    padding: 1rem;
+    background-color: #000000; /* black header */
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,14 +25,15 @@ header .logo {
 }
 
 nav a {
-    color: #004d00; /* dark green for links */
-    margin-left: 1rem;
+    color: #00ff66; /* bright green for top-right links */
+    margin-left: 1.5rem;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #3e8e41; /* darker green hover */
+
 }
 
 main {
