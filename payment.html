@@ -18,32 +18,12 @@
 
 <main>
     <h2>Pay Worker</h2>
-    <p>Use the Hnry payment options below:</p>
 
-    <!-- HNRY Payment Link Button -->
-    <a class="btn" href="HNRY_PAYMENT_LINK_GOES_HERE" target="_blank">
-        Pay via Hnry Link
-    </a>
-    <!-- ▲ Replace HNRY_PAYMENT_LINK_GOES_HERE with your actual Hnry URL -->
-<p id="pending-msg" style="color: #555; font-weight:bold;">
-Payment pending — waiting for Hnry confirmation.
-</p>
-    <p>Or scan QR code:</p>
-    <!-- HNRY QR Code -->
-    <img src="HNRY_QR_IMAGE.png" alt="Scan to Pay" width="200">
-    <!-- ▲ Replace HNRY_QR_IMAGE.png with the actual QR code file you get from Hnry -->
-
-</main>
-
-<footer>
-    <p>&copy; 2026 PayHive / Virtual Online Contact Centre</p>
-</footer>
-<script src="js/main.js"></script>
-</body>
-</html>
-<main>
-    <h2>Pay Worker</h2>
-    <p>Use the Hnry payment options below:</p>
+    <!-- Pending Payment Message -->
+    <p id="pending-msg" style="color: #555; font-weight:bold;">
+        Payment pending — waiting for Hnry confirmation.
+    </p>
+    <!-- ▲ This will show until you replace the placeholders with Hnry info -->
 
     <!-- HNRY Payment Link Button -->
     <a class="btn" href="HNRY_PAYMENT_LINK_GOES_HERE" target="_blank" id="hnry-link">
@@ -54,10 +34,17 @@ Payment pending — waiting for Hnry confirmation.
     <p>Or scan QR code:</p>
     <!-- HNRY QR Code -->
     <img src="HNRY_QR_IMAGE.png" alt="Scan to Pay" width="200" id="hnry-qr">
-    <!-- ▲ Replace HNRY_QR_IMAGE.png with the actual QR code file you get from Hnry -->
+    <!-- ▲ Replace HNRY_QR_IMAGE.png with the actual QR code file from Hnry -->
 
     <button id="copy-link-btn" class="btn">Copy Payment Link</button>
 
 </main>
 
+<footer>
+    <p>&copy; 2026 PayHive / Virtual Online Contact Centre</p>
+</footer>
+
+<!-- JS enhancements -->
 <script src="js/main.js"></script>
+</body>
+</html>
