@@ -44,20 +44,17 @@ nav a:hover {
 ------------------------ */
 /* Hero section */
 .hero {
-    background-color: #c0ffc0; /* soft green */
-    padding: 3rem;
+    background-color: #c0ffc0;
+    padding: 2rem;
     border-radius: 10px;
-    margin: 4rem auto;         /* centers horizontally */
+    margin: 2rem auto;
     max-width: 900px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 
     display: flex;
     flex-direction: column;
-    align-items: center;       /* center content horizontally */
-    justify-content: center;   /* center content vertically if min-height used */
+    align-items: center;
     text-align: center;
-    min-height: 60vh;          /* makes it take up most of the screen height */
-    gap: 20px;                 /* space between elements */
 }
 
 main h2 {
