@@ -42,12 +42,17 @@ nav a:hover {
    HERO / MAIN CONTENT
 ------------------------ */
 .hero {
-    background-color: #c0ffc0; /* green hero section */
+    background-color: #c0ffc0; /* your green */
     padding: 2rem;
     border-radius: 10px;
-    margin: 1rem auto;
+    margin: 2rem auto;       /* centers horizontally */
     max-width: 900px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* centers content inside hero */
+    text-align: center;      /* centers text */
 }
 
 main h2 {
