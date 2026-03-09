@@ -1,15 +1,17 @@
+/* -----------------------
+   GLOBAL STYLES
+------------------------ */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #c0ffc0;
+    padding: 0;
     color: #333;
+    background-color: #c0ffc0; /* light green background for the page */
 }
 
-.logo {
-    color: #ffd700; /* gold text for Gold Hive logo */
-    font-size: 1.8rem;
-    font-weight: bold;
-}
+/* -----------------------
+   HEADER
+------------------------ */
 header {
     background-color: #000000; /* black header */
     padding: 1rem 2rem;
@@ -18,46 +20,105 @@ header {
     align-items: center;
 }
 
-header .logo {
+.logo {
+    color: #ffd700; /* gold text for Gold Hive */
     font-size: 1.8rem;
     font-weight: bold;
-    color: #ffd700; /* gold */
 }
 
 nav a {
-    color: #00ff66; /* bright green for top-right links */
+    color: #00ff66; /* bright green nav links */
     margin-left: 1.5rem;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #3e8e41; /* darker green hover */
-
+    color: #c0ffc0; /* lighter green hover */
+    text-decoration: underline;
 }
 
-main {
-    padding: 2rem;
-    text-align: center;
-}
-
+/* -----------------------
+   HERO / MAIN CONTENT
+------------------------ */
 .hero {
-    background-color: #c0ffc0; /* light green for hero section */
+    background-color: #c0ffc0; /* green hero section */
     padding: 2rem;
     border-radius: 10px;
+    margin: 1rem auto;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+main h2 {
+    color: #004d00; /* darker green heading */
+}
+
+/* -----------------------
+   BUTTONS
+------------------------ */
 .btn {
     display: inline-block;
-    margin-top: 1rem;
-    padding: 0.75rem 1.5rem;
-    background-color: #ffd700; /* gold button */
-    color: #333;
+    background-color: #4CAF50; /* green button */
+    color: #ffd700; /* gold text */
+    padding: 0.6rem 1.2rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
 }
 
 .btn:hover {
-    background-color: #e6c200;
+    background-color: #3e8e41; /* darker green hover */
+    color: #fff; /* white text on hover */
+}
+
+/* -----------------------
+   PENDING MESSAGE
+------------------------ */
+#pending-msg {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* -----------------------
+   QR IMAGE
+------------------------ */
+#hnry-qr {
+    display: block;
+    margin: 1rem 0;
+}
+
+/* -----------------------
+   FOOTER
+------------------------ */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000;
+    color: #ffd700;
+}
+
+/* -----------------------
+   RESPONSIVE
+------------------------ */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .hero {
+        padding: 1.5rem;
+    }
 }
