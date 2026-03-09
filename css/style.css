@@ -1,18 +1,15 @@
-/* -----------------------
-   GLOBAL STYLES
------------------------- */
 body {
-    height: 100%;           /* make the body fill the viewport */
-    margin: 0;              /* remove default margin */
-    display: flex;
-    justify-content: center; /* center horizontally */
-    align-items: center;     /* center vertically */
-    background-color: #f5f5f5; /* optional: page background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #c0ffc0;
+    color: #333;
 }
 
-/* -----------------------
-   HEADER
------------------------- */
+.logo {
+    color: #ffd700; /* gold text for Gold Hive logo */
+    font-size: 1.8rem;
+    font-weight: bold;
+}
 header {
     background-color: #000000; /* black header */
     padding: 1rem 2rem;
@@ -21,116 +18,46 @@ header {
     align-items: center;
 }
 
-.logo {
-    color: #ffd700; /* gold text for Gold Hive */
+header .logo {
     font-size: 1.8rem;
     font-weight: bold;
+    color: #ffd700; /* gold */
 }
 
 nav a {
-    color: #00ff66; /* bright green nav links */
+    color: #00ff66; /* bright green for top-right links */
     margin-left: 1.5rem;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #c0ffc0; /* lighter green hover */
-    text-decoration: underline;
+    color: #3e8e41; /* darker green hover */
+
 }
 
-/* -----------------------
-   HERO / MAIN CONTENT
------------------------- */
-/* Hero section */
-.hero {
-    background-color: #c0ffc0;
+main {
     padding: 2rem;
-    border-radius: 10px;
-    margin: 2rem auto;
-    max-width: 900px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
 }
 
-<main class="hero">
-    <h1>Welcome to PayHive</h1>
-    <h2>Your NZ Work & Payment Hub</h2>
-
-    <a class="btn" href="payment.html">Pay Worker</a>
-    <a class="btn" href="buy-products.html">Buy Products</a>
-</main>
+.hero {
+    background-color: #c0ffc0; /* light green for hero section */
+    padding: 2rem;
+    border-radius: 10px;
 }
 
-/* -----------------------
-   BUTTONS
------------------------- */
 .btn {
     display: inline-block;
-    background-color: #4CAF50; /* green button */
-    color: #ffd700; /* gold text */
-    padding: 0.6rem 1.2rem;
-    margin: 0.5rem 0;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #ffd700; /* gold button */
+    color: #333;
     font-weight: bold;
     text-decoration: none;
-    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
 }
 
 .btn:hover {
-    background-color: #3e8e41; /* darker green hover */
-    color: #fff; /* white text on hover */
-}
-
-/* -----------------------
-   PENDING MESSAGE
------------------------- */
-#pending-msg {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #555;
-    margin-bottom: 1rem;
-}
-
-/* -----------------------
-   QR IMAGE
------------------------- */
-#hnry-qr {
-    display: block;
-    margin: 1rem 0;
-}
-
-/* -----------------------
-   FOOTER
------------------------- */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #000;
-    color: #ffd700;
-}
-
-/* -----------------------
-   RESPONSIVE
------------------------- */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav a {
-        margin-left: 0;
-        margin-top: 0.5rem;
-    }
-
-    .hero {
-        padding: 1.5rem;
-    }
+    background-color: #e6c200;
 }
