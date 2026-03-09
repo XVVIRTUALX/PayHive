@@ -2,11 +2,12 @@
    GLOBAL STYLES
 ------------------------ */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #c0ffc0; /* light green background for the page */
+    height: 100%;           /* make the body fill the viewport */
+    margin: 0;              /* remove default margin */
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+    background-color: #f5f5f5; /* optional: page background */
 }
 
 /* -----------------------
@@ -42,17 +43,17 @@ nav a:hover {
    HERO / MAIN CONTENT
 ------------------------ */
 .hero {
-    background-color: #c0ffc0; /* your green */
-    padding: 2rem;
+    background-color: #c0ffc0; /* soft green */
+    padding: 2rem 3rem;
     border-radius: 10px;
-    margin: 2rem auto;       /* centers horizontally */
     max-width: 900px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 
     display: flex;
     flex-direction: column;
-    align-items: center;     /* centers content inside hero */
-    text-align: center;      /* centers text */
+    align-items: center;       /* centers content horizontally */
+    text-align: center;        /* centers text */
+    gap: 20px;                 /* space between elements */
 }
 
 main h2 {
