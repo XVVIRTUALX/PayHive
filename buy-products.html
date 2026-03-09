@@ -17,23 +17,25 @@
     </nav>
 </header>
 
-<main>
+<main class="hero">
     <h2>Buy Products</h2>
 
     <!-- Pending Payment Message -->
     <p id="pending-msg" style="color: #555; font-weight:bold;">
         Payment pending — waiting for Hnry confirmation.
     </p>
+    <!-- ▲ This will show until you replace the placeholders with Hnry info -->
 
-    <!-- HNRY Payment Link for Products -->
+    <!-- HNRY Payment Link Button -->
     <a class="btn" href="HNRY_PRODUCT_LINK_GOES_HERE" target="_blank" id="hnry-link">
         Pay via Hnry Link
     </a>
-    <!-- ▲ Replace HNRY_PRODUCT_LINK_GOES_HERE with actual Hnry URL -->
+    <!-- ▲ Replace HNRY_PRODUCT_LINK_GOES_HERE with your actual Hnry product link -->
 
     <p>Or scan QR code:</p>
+    <!-- HNRY QR Code -->
     <img src="HNRY_PRODUCT_QR.png" alt="Scan to Pay" width="200" id="hnry-qr">
-    <!-- ▲ Replace HNRY_PRODUCT_QR.png with actual QR image -->
+    <!-- ▲ Replace HNRY_PRODUCT_QR.png with the actual QR code file from Hnry -->
 
     <button id="copy-link-btn" class="btn">Copy Payment Link</button>
 
@@ -43,6 +45,7 @@
     <p>&copy; 2026 PayHive / Virtual Online Contact Centre</p>
 </footer>
 
+<!-- JS enhancements -->
 <script src="js/main.js"></script>
 </body>
 </html>
